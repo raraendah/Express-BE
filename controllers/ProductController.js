@@ -2,6 +2,10 @@ import Product from "../models/ProductModel.js";
 import path from "path";
 import fs from "fs";
 
+export const getHalo = async(request, h)=>{
+    return 'halo'
+}
+
 export const getProducts = async(req, res)=>{
     try {
         const response = await Product.findAll();
